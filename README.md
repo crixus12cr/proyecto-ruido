@@ -1,4 +1,4 @@
-# 🚀 Proyecto Laravel
+# 🚀 Proyecto Ruido con ESP32 para Electronica Basica
 
 Aplicación desarrollada con Laravel utilizando un Starter Kit.
 
@@ -22,7 +22,6 @@ Asegúrate de tener instalado en tu sistema:
 - Composer  
 - MySQL  
 - Node.js >= 20  
-- NPM  
 
 Puedes verificar las versiones con:
 
@@ -30,7 +29,6 @@ Puedes verificar las versiones con:
 php -v
 composer -V
 node -v
-npm -v
 ```
 
 ---
@@ -42,8 +40,8 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd nombre-del-proyecto
+git clone https://github.com/crixus12cr/proyecto-ruido.git
+cd proyectoFet
 ```
 
 ---
@@ -58,16 +56,10 @@ composer install
 
 ### 3️⃣ Crear archivo de entorno
 
-En Linux / Mac:
+En la consola de vsCode:
 
 ```bash
 cp .env.example .env
-```
-
-En Windows:
-
-```bash
-copy .env.example .env
 ```
 
 ---
@@ -135,10 +127,5 @@ http://127.0.0.1:8000
 - `routes/` → Definición de rutas  
 - `resources/` → Vistas y assets  
 - `database/` → Migraciones y seeders  
-- `bootstrap/` → Configuración del framework  
 
 ---
-
-## 👨‍💻 Autor
-
-Desarrollado por Cristian Perdomo 🚀
