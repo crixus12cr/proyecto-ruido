@@ -11,24 +11,39 @@
             </flux:sidebar.header>
 
             <flux:sidebar.nav>
-                <flux:sidebar.group :heading="__('Platform')" class="grid">
+                <!-- General -->
+                <flux:sidebar.group :heading="__('General')" class="grid">
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
+                    </flux:sidebar.item>
+                </flux:sidebar.group>
+
+                <!-- Gestión Académica -->
+                <flux:sidebar.group :heading="__('Gestión Académica')" class="grid">
+                    <flux:sidebar.item icon="academic-cap" href="#" wire:navigate>
+                        {{ __('Aulas') }}
+                    </flux:sidebar.item>
+                    
+                    <flux:sidebar.item icon="speaker-wave" href="#" wire:navigate>
+                        {{ __('Alertas de Ruido') }}
+                    </flux:sidebar.item>
+                    
+                    <flux:sidebar.item icon="clock" href="#" wire:navigate>
+                        {{ __('Historial de Notificaciones') }}
+                    </flux:sidebar.item>
+                </flux:sidebar.group>
+
+                <!-- Administración -->
+                <flux:sidebar.group :heading="__('Administración')" class="grid">
+                    <flux:sidebar.item icon="users" href="#" wire:navigate>
+                        {{ __('Usuarios') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
             <flux:spacer />
 
-            <flux:sidebar.nav>
-                <flux:sidebar.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                    {{ __('Repository') }}
-                </flux:sidebar.item>
-
-                <flux:sidebar.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
-                    {{ __('Documentation') }}
-                </flux:sidebar.item>
-            </flux:sidebar.nav>
+            @include('partials.theme')
 
             <x-desktop-user-menu class="hidden lg:block" :name="auth()->user()->name" />
         </flux:sidebar>
