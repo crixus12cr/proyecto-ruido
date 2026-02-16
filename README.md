@@ -10,7 +10,6 @@ Aplicación desarrollada con Laravel utilizando un Starter Kit.
 - Composer  
 - MySQL  
 - Node.js 20 o superior  
-- NPM  
 
 ---
 
@@ -41,7 +40,7 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
 
 ```bash
 git clone https://github.com/crixus12cr/proyecto-ruido.git
-cd proyectoFet
+cd proyecto-ruido
 ```
 
 ---
